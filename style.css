@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 2px;
+    background: #555;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+/* MENU DE NAVEGACIÓN */
+nav {
+    background: #333;
+    text-align: center;
+    padding: 2px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;  /* Esto evita que se pongan en columna */
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background: #555;
+    transform: scale(1.1);
+}
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ENCABEZADO */
+header {
+    background: linear-gradient(90deg, #000, #222);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* LOGO */
+.logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* MENU DE NAVEGACION */
+nav {
+    background: #333;
+    text-align: center;
+    padding: 2px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background: #555;
+    transform: scale(1.1);
+}
+
+/* SECCIONES */
+section {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideUp 1s ease-in-out;
+}
+
+/* BOTONES */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+
+/* TABLA DE CONTACTO */
+.contact-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact-table th, .contact-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.contact-table th {
+    background: #007BFF;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+/* Animación de entrada */
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos de botones */
+.instagram-button, .facebook-button, .app-button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    animation: slide-up 0.8s ease-out;
+}
+
+/* Botón de Instagram (abajo izquierda) */
+.instagram-button {
+    bottom: 100px;
+    left: 20px;
+}
+
+.instagram-button img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.instagram-button:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Botón de Facebook (abajo izquierda, debajo de Instagram) */
+.facebook-button {
+    bottom: 20px;
+    left: 20px;
+}
+
+.facebook-button img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.facebook-button:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+/* Botón de la App (abajo derecha) */
+.app-button {
+    bottom: 20px;
+    right: 20px;
+}
+
+.app-button img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.app-button:hover {
+    transform: scale(1.1);
+}
+
+/* Ajuste para móviles */
+@media (max-width: 500px) {
+    .instagram-button, .facebook-button, .app-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .instagram-button {
+        bottom: 90px;
+        left: 15px;
+    }
+
+    .facebook-button {
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .app-button {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+.service-card {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: scale(1.1);
+}
+.animated-title {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
